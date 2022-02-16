@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
   <head>
     <!-- meta tags -->
     <meta charset="UTF-8">
@@ -15,12 +15,29 @@
     <!-- font : google-fonts('Hi Melody') -->
     <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap" rel="stylesheet">
 
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon">
     <!-- title -->
     <title>To Do List</title>
   </head>
   <body>
     <div class="container">
-      
+      <h1>To Do List</h1>
+      <div class="inputbox">
+        <input class="txt-input" type="text" placeholder="What should you do?">
+        <input class="add-btn" id="add-btn" type="button" value="add">
+      </div>
+      <hr>
+      <ul class="list">
+        <li class="list-item">
+          <div class="item-content">list item1</div>
+          <div class="set-btns">
+            <input class="edit-btn" id="edit-btn" type="button" value="edit">
+            <input class="done-btn" id="done-btn" type="checkbox">
+          </div>
+        </li>
+        <hr>
+      </ul>
     </div>
   </body>
 </html>
