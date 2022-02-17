@@ -9,9 +9,6 @@
     <!-- css -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- js -->
-    <script type="text/javascript" defer src="./script.js"></script>
-
     <!-- font : google-fonts('Hi Melody') -->
     <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap" rel="stylesheet">
 
@@ -24,12 +21,14 @@
     <div class="container">
       <h1>To Do List</h1>
       <div class="inputbox">
-        <input class="txt-input" id="txt-input" type="text" placeholder="What should you do?">
+        <input onkeypress="if(event.keyCode==13) {addListItem(); return false;}" class="txt-input" id="txt-input" type="text" placeholder="What should you do?">
         <input class="add-btn" disabled id="add-btn" type="button" value="add">
       </div>
       <hr>
       <ul class="list" id="list">
       </ul>
     </div>
+    <!-- js -->
+    <script type="text/javascript" defer src="./script.js"></script>
   </body>
 </html>

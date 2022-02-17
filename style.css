@@ -1,5 +1,5 @@
 /***** initailize *****/
-:root {`
+:root {
   --text--color: #141E12;
   --border-color: #A2AF9F;
   --border-radius: 15px;
@@ -94,7 +94,7 @@
 }
 
 .edit-btn {
-  width: 50%;
+  width: 65%;
   font-size: 1.5rem;
   border: 0.16em solid var(--border-color);
   border-radius: 7px;
